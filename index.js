@@ -8,6 +8,7 @@ const port = process.env.PORT || 3838;
 var cors = require('cors')
 
 app.use(cors())
+
 app.get('/init', (req, res) => {
     const data = {
         total_amount: req.query.payment_amount,
