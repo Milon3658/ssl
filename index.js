@@ -49,12 +49,12 @@ app.get('/init', (req, res) => {
     });
 })
 
-app.get('/success', (req, res) => {
+app.post('/success', (req, res) => {
     console.log('Success')
     res.sendFile('success.html', { root: __dirname })
 })
 
-app.get('/fail', (req, res) => {
+app.post('/fail', (req, res) => {
     console.log('fail')
     res.sendFile('fail.html', { root: __dirname })
 })
